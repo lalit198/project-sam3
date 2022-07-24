@@ -1,0 +1,1162 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+
+.main_container{
+    width: 100%;
+    min-height: 100vh;
+    background: url('../images/bd-bg.36a8d8de.jpg');
+    background-size: 100% 100%;
+}
+.reg_nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+}
+.reg_nav li a{
+    text-decoration: none;
+    color: #000;
+}
+.reg_nav li a:hover{
+    text-decoration: none;
+    color: #000;
+}
+.nav_item_left li img{
+    width: 59px;
+    height: 21px;
+}
+.nav_item_left{
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+.nav_item_left_signup{
+    padding-left: .9rem;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+    text-decoration: none;
+}
+.nav_item_left_signup:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.nav_item_right{
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+.nav_item_right li img{
+    width: 25px;
+    height: 25px;
+}
+.nav_logo li img{
+    width: 125px;
+}
+
+/*----------------------- SIGNUP FORM CODE START -------------------------------*/
+.parent_regform_container{
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+}
+.reg_form_title{
+    margin: 0;
+    text-align: center;
+    font-size: 2.8rem;
+    line-height: .53rem;
+    font-weight: 600;
+    color: #FFF;
+    letter-spacing: 3px;
+}
+.reg_form_box{
+    margin: auto;
+    padding: 0 26px;
+    border-radius: 24px;
+    padding: 4rem 2.5rem 4rem 2.5rem;;
+}
+.sigin_link{
+    color: #FFF;
+    text-decoration: none;
+}
+.sigin_link:hover{
+    color: #FFF;
+    text-decoration: none;
+}
+
+/*----------- For round checkbox Start------------------*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 28px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: green;
+  border-color: green;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #fb76a1;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+/*----------- For round checkbox Start------------------*/
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*----------- For round checkbox End------------------*/
+.switch_sigup::after{
+    content: "Encrypted registration";
+    color: #000;
+    position: absolute;
+    left: 4rem;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .94rem;
+    font-weight: 600;
+}
+.form_bottom_text{
+    text-align: center;
+}
+.form_bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login_reg_signup{
+    font-size: 2.2rem;
+    line-height: 1.61rem;
+    font-weight: 500;
+    color: #FFF!important;
+    border: none;
+    outline: none;
+    background: none;
+    text-decoration: none;
+}
+.login_reg_signup:hover{
+    text-decoration: none;
+}
+.login_reg{
+    width: 6.7rem;
+    height: 6.7rem;
+    background: url(../images/login_1.6006d53.png) no-repeat 50%;
+    background-size: 100% 100%;
+    border: none;
+    outline: none;
+}
+.reg_form_box .form-group{
+    margin: 1.6rem 0;
+}
+.reg_form_box .form-group input{
+    height: 2.6rem;
+    width: 100%;
+    font-size: .95rem;
+    line-height: .87rem;
+    outline: none;
+    border-radius: 0;
+    color: rgb(255, 25, 100);
+    background: transparent;
+}
+.reg_form_box .form-group input::placeholder{
+    height: 2.6rem;
+    width: 100%;
+    font-size: .95rem;
+    line-height: .87rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #d8d8d8;
+    border-radius: 0;
+    color: rgb(255, 25, 100);
+    background: transparent;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus{
+    outline: none!important;
+    box-shadow: none!important;
+}
+.reg_form_cus input{
+    border: none; border-bottom: 1px solid rgb(216, 186, 197);color:#000;
+}
+.reg_form_cus input::placeholder{
+    color:#000!important;
+}
+/*----------------------- SIGNUP FORM CODE END -------------------------------*/
+
+
+/*----------------------- SIGNIN FORM CODE START -------------------------------*/
+.switch_sigin::after{
+    content: "Remember the password";
+    color: #FFF;
+    position: absolute;
+    left: 4rem;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .94rem;
+}
+.login_reg_signin{
+    font-size: 2.2rem;
+    line-height: 1.61rem;
+    font-weight: 500;
+    color: #FFF!important;
+    border: none;
+    outline: none;
+    background: none;
+    text-decoration: none;
+}
+.login_reg_signin:hover{
+    text-decoration: none;
+}
+/*----------------------- SIGNIN FORM CODE End -------------------------------*/
+
+
+
+/*-------------------------- DASHBOARD CODE START--------------------- */
+.parent_container{
+    padding-top: 9rem;
+    padding-bottom: 7rem;
+}
+
+.dashboard_banner{
+    position: relative;
+    padding: 0;
+    z-index: 2;
+    width: 40%;
+    margin: auto;
+}
+.dashboard_banner_content .total_title{
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    color: #abacb9;
+    margin-top: 0.8rem;
+    text-align: center;
+}
+.dashboard_banner_content .total_balance{
+    position: relative;
+    font-size: 2.4rem;
+    line-height: 2.5625rem;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 1rem;
+    color: #000;
+}
+
+.dashboard_banner_content .total_unit{
+    position: absolute;
+    top: 18px;
+    left: 100%;
+    font-size: .96rem;
+    line-height: 1.2rem;
+    padding-left: .325rem;
+    font-weight: 200;
+    font-family: Helvetica;
+    color: #000;
+}
+.header_down{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.35rem;
+    margin-bottom: 1.8125rem;
+}
+.header_down_content{
+    font-size: 16px;
+    line-height: 13px;
+    font-weight: 700;
+    color: #FFF;
+}
+.moving_text marquee{
+    color: #000;
+}
+
+.dash_header_down{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: hsla(0,0%,100%,.21);
+    height: 5.3125rem;
+    width: 92%!important;
+    margin: 0 auto;
+    margin-bottom: 1.8125rem!important;
+}
+.dash_header_down_img{
+    background: url(../images/bz-bg.d6bdad9b.png);
+    background-size: 100%;
+    width: 100%;
+    height: 4.9rem
+}
+.dash_header_down_img_bg{
+    width: 40px;
+    height: 40px;
+    background-color: #FFF;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-left: 1.5rem;
+    position: relative;
+}
+.dash_header_down_img_bg .dash_header_down_img{
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.dash_menu_main{
+    position: relative;
+    padding: 0 .2rem;
+}
+.dash_menu_img img{
+    width: 20%;
+    position: absolute;
+    right: -1.35rem;
+    top: -80px;
+}
+
+.dash_menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-row-gap: 2rem;
+
+}
+.menu_item_icon{
+    display: flex;
+    justify-content: center;
+}
+.menu_item_icon .img_bg{
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #FFF;
+}
+.menu_item_icon img{
+    width: 4rem;
+    height: 4rem;
+
+}
+.dash_details_btn{
+    width: 120px;
+    height: 45px;
+    border-radius: 37px 0 58px 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFF;
+}
+.menu_item_text{
+    font-size: 1rem;
+    line-height: .825rem;
+    font-weight: 400;
+    color: #85c0b9;
+    text-align: center;
+    margin-top: .8rem;
+}
+
+.wallet_div{
+    background: url(../images/qb-bg.8e09b5a4.png);
+    background-size: 100%;
+}
+.promotion_div{
+    background: url(../images/lw-bg.794ced21.png);
+    background-size: 100%;
+}
+.amount_promotion_parent{
+    padding-top: 4.56rem;
+}
+.wallet_promotion_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.wallet_promotion_wrap{
+    padding: 1.5rem 1.26rem 2.64rem 1.26rem;
+    height: 16.226rem;
+    background-color: #FFF;
+    border-radius: 1.35rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+
+    /* background: linear-gradient(0deg,#fff,hsla(0,0%,100%,.5)); */
+    position: relative;
+    height: auto;
+}
+.amount_info img{
+    display: block;
+    width: 7rem;
+}
+.amount_balance{
+    font-size: 1rem;
+    line-height: 1.35rem;
+    font-weight: 700;
+    color: #2d645a;;
+    margin: 0;
+    max-width: 10.38rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+.amount_balance span{
+    color: #ef5079;
+}
+.amount_title{
+    color: #000;
+    text-align: left!important;
+    margin: 5px 0;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.26rem;
+}
+.amount_account{
+    color: #212529;
+    text-align: left!important;
+    font-size: .9rem;
+    line-height: .78rem;
+    margin-top: .63rem;
+}
+
+.join_section{
+    overflow: hidden;
+    box-shadow: -2px -45px 65px 0 rgb(45 100 90 / 10%);
+}
+.top_line_container{
+    margin-bottom: 1rem;
+    text-align: center;
+    overflow: hidden;
+}
+.top_line_container span{
+    width: 3rem;
+    height: .6rem;
+    background-color: #ef5079;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 1.2rem;
+}
+.join_section_title{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #282828;
+    line-height: 1.83rem;
+    text-align: center;
+}
+.join_section_text{
+    color: #ef5079!important;
+    text-align: center;
+    width: 100%;
+    line-height: 1.3rem;
+    font-weight: 300;
+    text-align: center;
+}
+.join_section_img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 2.79rem 0 .75rem 0;
+}
+.login_input_group{
+    position: relative;
+    margin: 1rem 0;
+    border-bottom: 0;
+}
+.login_btn{
+    background: linear-gradient(180deg,#ff87ad,#f3598b);
+    /* box-shadow: 0 6px 15px 0 #f76997; */
+    border-radius: 10px;
+    font-size: 1.29rem;
+    color: #fff;
+    border: none;
+    outline: none;
+    height: 3.212rem;
+    line-height: 3.212rem;
+}
+.dash_details_btn{
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFF;
+    border-radius: 100px;
+
+}
+.member_warp{
+    position: relative;
+    width: 99%;
+    padding: 2.125rem 1.35rem;
+    margin: auto;
+}
+.member_warp_img{
+    position: absolute;
+    right: 0;
+    top: -30px;
+}
+.member_warp_img img{
+    width: 6rem;
+}
+.member_warp_title{
+    font-size: 1.36rem;
+    font-weight: 700;
+    line-height: 1.56rem;
+    color: #000;
+    text-align: left;
+    margin-bottom: 1.2rem;
+}
+
+.member_warp_inner{
+    width: 49%;
+}
+.left_member_wrap_content{
+    background: url(../images/bg-q.0588a423.png);
+    background-size: 100%;
+    height: 10rem;
+    padding-top: 6rem;
+}
+.right_member_wrap_content{
+    background: url(../images/bg-w.0b2a7948.png);
+    background-size: 100%;
+    height: 10rem;
+    padding-top: 6rem;
+}
+.member_warp_inner_content{
+   display: flex;
+   flex-direction: column;
+}
+.member_warp_inner_content span p{
+    display: inline-block;
+    vertical-align: text-bottom;
+    font-size: 1rem;
+    line-height: 1.35rem;
+    font-weight: 500;
+    color: #FFF;
+    max-width: 15.18rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    margin-top: -.16rem;
+}
+.member_warp_inner_content p{
+    font-size: 1rem;
+    line-height: .87rem;
+    font-weight: 500;
+    color: #FFF;
+    text-align: center;
+}
+
+.bg_img_mix2{
+    background: url('../images/abbg.7204892.72048923.png');
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.about_lefthand{
+    position: absolute;
+    left: 0;
+    top: 2.98rem;
+}
+.about_lefthand img{
+    width: 6rem;
+}
+.about_righthand{
+    position: absolute;
+    right: 0;
+    top: -4.221rem;
+}
+.about_righthand img{
+    width: 6rem;
+}
+.about_inner_head{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
+.about_inner_head2{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ef5079;
+    text-align: center;
+}
+.about_inner_content{
+    margin: 1rem 3.102rem .5rem 3.102rem;
+    font-weight: 500;
+    line-height: 1.83rem;
+    color: #9696a1;
+    text-align: justify;
+    word-spacing: -1px;
+}
+.about_inner img{
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1.14;
+}
+
+.global_partners_parent{
+    margin-top: 2rem;
+}
+.global_partners{
+    padding-top: 1rem;
+    background: #FFF;
+    border-radius: 30px;
+}
+.global_partners_titles{
+    padding-bottom: .78rem;
+    margin-bottom: .63rem;
+    text-align: center;
+    font-size: 1.26rem;
+    font-weight: 700;
+    line-height: 1.26rem;
+    color: #280d5f;
+}
+.global_partners_inner{
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-row-gap: 2rem;
+    place-items: center;
+}
+.global_partners_imgbox{
+    text-align: center;
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: #FFF;
+}
+.global_partners_imgbox img{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.dashboard_footer{
+    margin: 0;
+    width: 100%;
+    height: 70px;
+    border-radius: 16px 16px 0 0;
+    background: #FFF;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.dashboard_footer a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+.dashboard_footer a p{
+    margin-bottom: 0;
+}
+.dashboard_footer a img{
+    margin: auto;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    /* padding-top: 24px; */
+    line-height: 12px;
+    font-size: 12px;
+    color: #b5b5b5;
+    background: top no-repeat;
+    background-size: 22px 22px;
+}
+
+
+/*-------------------------- DASHBOARD CODE END--------------------- */
+
+/*------------------------ Mine Code Starts -----------------------*/
+.mine_upper_text_head{
+    font-weight: 700;
+    font-size: 14px;
+    color: #191919;
+    text-align: center;
+    margin-bottom: .4rem;
+}
+.mine_upper_text_subhead{
+    font-size: 14px;
+    color: #9696a1;
+    line-height: 19px;
+    margin-top: 10px;
+    text-align: justify;
+}
+.mine_head h6{
+    font-size: 21px;
+    color: #191919;
+    font-weight: 700;
+    margin-bottom: 16px;
+    margin-top: 3rem;
+}
+.mine_option{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dotted #191919;
+}
+.mine_option img{
+    width: 31px;
+    height: 31px;
+}
+.mine_option a{
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #000;
+}
+.mine_mid{
+    display:flex;
+}
+.mine_mid a{
+    width: 168px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #fff;
+    background: rgba(133,192,185,.15);
+    border: 1px solid #85c0b9;
+    border-radius: 31px;
+    box-sizing: border-box;
+    margin: 10px 0 10px 10px;
+    text-decoration: none;
+}
+/*-------------------------- Mine CODE END--------------------- */
+
+/*------------------------ Deposit Code Starts -----------------------*/
+.recharge_container{
+    position: relative;
+    padding: 0;
+    z-index: 2;
+    width: 40%;
+    margin: 0 418px;
+}
+.recharge_inner_container{
+    display: flex;
+    justify-content: space-between;
+}
+.recharge_amount_info{
+    position: relative;
+    width: 13.96rem;
+    height: 11.46rem;
+    padding: 1.688rem .26rem 1.669rem .26rem;
+    border-radius: 1.35rem;
+}
+.recharge_title{
+    font-size: 1.17rem;
+    color: #FFF;
+    font-weight: 400;
+    text-align: left;
+}
+.recharge_amount_info i{
+    font-size: 2rem;
+    color: #f76997;
+}
+.recharge_para p{
+    font-size: 1.1rem;
+    font-weight: 500!important;
+    line-height: 1.4rem;
+    color: #FFF;
+    text-align: justify;
+    color: #000;
+}
+
+/*------------------------ Deposit Code End -----------------------*/
+
+/*------------------------ Withdrawal Code Start -----------------------*/
+
+.parent_withdrawal_container{
+    padding-top: 5rem;
+    /* padding-bottom: 9rem; */
+}
+.withdrawal_form_box{
+    margin: auto;
+    padding: 0 26px;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 1rem 5rem 4rem 4rem;;
+}
+.withdrawal_form_box .withdrawal_form_box_inner{
+    width: 40%;
+    margin: auto;
+}
+.withdrawal_form_head p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #6c757d;
+}
+.withdrawal_amt p{
+    font-size: 50px;
+    padding: 1rem 3.500rem;
+    text-align: center;
+    background-color: #e9ecef;
+}
+.withdrawal_form_box input, .withdrawal_form_box select{
+    border-radius: 4px;
+}
+.withdrawal_form_box textarea{
+    border-radius: 18px;
+}
+.withdrawal_form_box .btn{
+    border-radius: 24px;
+}
+
+
+
+/*------------------------ Withdrawal Code End -----------------------*/
+
+
+/*------------------------ Investing Code Start -----------------------*/
+.investlisting_nav{
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+    margin-top: 1rem;
+}
+.investlisting_item, .investlisting_item a{
+    font-weight: 400;
+    color: #000;
+    cursor: pointer;
+    padding: 0.5rem 0.8rem;
+    background: #FFF;
+    font-size: .9rem;
+    text-decoration: none;
+}
+.investlisting_nav .active {
+    position: relative;
+    font-weight: 800;
+    color: #feffff;
+    background-color: #27ad9b;
+    z-index: 3;
+}
+.investlisting_box_parent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 0;
+    grid-column-gap: .8rem;
+    margin-top: 3.3rem;
+}
+.investing_wrap_inner_content{
+    width: 100%;
+    border-radius: 8.64px;
+    padding: 1rem;
+}
+.investing_wrap_inner_content p{
+    margin-left: 0;
+}
+.investing_wrap_inner_content .member_warp_inner_content img {
+    width: 100%;
+    height: 10rem;
+}
+.member_warp_inner_content a{
+    text-decoration: none;
+}
+.member_warp_inner_content a:hover{
+    text-decoration: none;
+}
+/*------------------------ Investing Code End -----------------------*/
+
+/*------------------------ Invespro Start -----------------------*/
+.parent_investpro_container{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.investpro_container{
+    width: 93%
+}
+.investpro_top_box{
+background-color: #40afff;
+    background-image: linear-gradient(45deg,#40afff,#3574fa);
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.investpro_box{
+    padding: .7rem 1.1rem;
+    background-color: #FFF;
+    border-radius: 5px;
+}
+.investpro_box_item{
+    display: flex;
+    justify-content: space-between;
+}
+.investpro_box_item p{
+    margin-bottom: .8rem;
+    font-size: .9rem;
+}
+.investpro_box_item .form-group{
+    width: 100%;
+}
+/*------------------------ Invespro End -----------------------*/
+
+/*------------------------------ Trade Start------------------------- */
+.trade_profit_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;    
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.trade_img{
+    width: 68px;
+    height: 63px;
+}
+.total_unit{
+    font-size: 13px;
+    font-weight: 700;
+    color: #000;
+}
+.trade_bg_img{
+    background: url('../images/bg3.f538319.f538319b.png');
+    background-size: 100% 100%;
+}
+.trade_profit_btn{
+    box-shadow: 0 23px 45px 0 rgb(196 171 154 / 50%);
+    background: linear-gradient(270deg,#dbbfad,#b39987);
+    padding: 0.7rem 2rem;
+    border-radius: 40px;
+    color: #FFF;
+}
+/*------------------------------ Trade End------------------------- */
+
+/*------------------------------ Share Start------------------------- */
+.share_img{
+    display: flex;
+    justify-content: center;
+}
+.share_img img{
+    width: 211.188px;
+}
+.share_text h3{
+    font-size: 25px;
+    line-height: 21.6px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
+.share_text p{
+    text-align: center;
+    font-weight: 700;
+    color: #9696a1;
+    font-size: 1rem;
+}
+.share_form_group input{
+    color: #fff!important;
+    background-color: #0c665a;
+    border-radius: 28.32px!important;
+    
+}
+.share_form_group input:focus{
+    background-color:#0c665a;
+    
+}
+.share_form_group button{
+    font-size: 12.48px;
+    position: absolute;
+    right: 2%;
+    border-radius: 24px!important;
+    background: linear-gradient(270deg,#dbbfad,#b39987);
+    box-shadow: 0 23px 45px 0 rgb(196 171 154 / 50%);
+    color: #FFF;
+}
+.qr_text h3{
+    text-align: center;
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 34.56px;
+}
+.qr_text p{
+    text-align: center;
+    color: #7cb6af;
+    font-size: 16.32px;
+    font-weight: 400;
+    line-height: 16.32px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.qr_img{
+    background-color: #FFF;
+    padding: .8rem;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+}
+/*------------------------------ Share End------------------------- */
+
+.parent_team_container{
+    padding-top: 5rem;
+    padding-bottom: 9;
+}
+.team_level_container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFF;
+    width: 94%;
+    margin: auto;
+    border-radius: 25px;
+    padding: 0 1rem;
+}
+.team_level_container button{
+    color: #fff;
+    background-color: #0c665a;
+    border-color: #0c665a;
+    border-radius: 5px;
+    padding: .3rem 2rem!important;
+}
+.team_level_container button:hover{
+    background-color: #3bd1d6;
+    border: 1px solid #3bd1d6;
+}
+.team_pagination{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .9rem;
+    background-color: #FFF;
+    width: 94%;
+    margin: auto;
+    border-radius: 25px;
+}
+.team_pagination_down{
+    display: flex;
+    justify-content: end;
+    background-color: #FFF;
+    padding: 0 .9rem;
+    padding-bottom: 1rem;
+}
+.team_pagination_down span{
+    font-size: 12px;
+}
+
+
+/*----------------------- MOBILE DEVICE CODE START ------------------*/
+@media (max-width: 1020px) {
+    .regform_container{
+        width: 100%;
+    }
+
+    .dashboard_banner{
+        width: 100%;
+    }
+    .wallet_promotion_wrap {
+        display: block;
+    }
+    .amount_info {
+        width: 100%;
+        height: 5rem;
+        margin-top: 1rem;
+        text-align: center;
+        display: flex;
+    }
+    .amount_balance {
+        max-width: 30.38rem;
+    }
+    .amount_title {
+        text-align: center;
+    }
+    .amount_account {
+        text-align: center;
+    }
+
+
+    /*------------------------ Deposit Code Starts -----------------------*/
+.recharge_container{
+
+    width: 95%;
+}
+.recharge_amount_info{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+
+}
+
+
+
+/*------------------------ Deposit Code End -----------------------*/
+
+/*------------------------ Withdrawal Code Start -----------------------*/
+.withdrawal_form_box {
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.withdrawal_form_box .withdrawal_form_box_inner {
+    width: 100%;
+}
+/*------------------------ Withdrawal Code End -----------------------*/
+
+/*------------------------ Investing Code start -----------------------*/
+.investing_wrap_inner_content {
+    margin-top: 1.5rem;
+}
+/*------------------------ Investing Code end -----------------------*/
+
+/*------------------------ Share Code Start -----------------------*/
+.qr_img{
+    width: 40%;
+}
+/*------------------------ Share Code End -----------------------*/
+
+.team_form_box{
+    padding: 0!important;
+}
+}
