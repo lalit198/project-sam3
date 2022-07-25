@@ -34,7 +34,8 @@
             <ul class="nav_item_right mt-3 ml-3">
                 <li>
                     <a href="#" class="nav_item_right_signup">
-                        <img src="images/back (1).png" class="img-fluid" alt="">
+                        <img src="images/arrow-chevron-left-web-and-mobile-ui-icon-619786.png" class="img-fluid" alt="" style="width:34px;
+                        height: 20px;">
                     </a>
                 </li>
                 <li>
@@ -44,7 +45,7 @@
                 </li>
             </ul>
 
-            <ul class="nav_item_right mr-3">
+            <ul class="nav_item_right mr-3" style="visibility: hidden;">
                 <li>
                     <a href="#" class="nav_item_right_signup">
                         <img src="images/header1.png" class="img-fluid" alt="">
@@ -71,9 +72,10 @@
                             <p class="mb-1">Basic account balance(TRX)</p>
                             <p style="color: red;">24-hour withdrawal</p>
                             <div class="withdrawal_amt">
-                                <p>5000.00</p>
+                                <p>1800</p>
                             </div>
-                            <p class="mb-4">Daily withdrwal limit <span style="color: blue;">0.00</span></p>
+                            <p class="mb-0">Daily withdrwal limit</p>
+                            <p class="mb-4" style="color: blue;">0.00</p>
                         </div>
                         <form action="">
                             <div class="form-group">
@@ -84,23 +86,25 @@
                             </div>
 
                             <div class="form-group mb-0">
-                                <input type="number" class="form-control" id="" placeholder="quota 0.01-1000000"
-                                    required style="border-radius: 25px;">
-                                <p class="text-danger" style="font-size: 14px;margin-left: .3rem;color: red;">Fee: 0，to
-                                    account 0</p>
+                                <input type="number" class="form-control" id="" placeholder="Withdrawal amount" required
+                                    style="border-radius: 25px;">
+                                <p class="text-danger" style="font-size: 14px;margin-left: .3rem;color: red;">Fee 0 TRX
+                                </p>
                             </div>
 
                             <div class="form-group">
-                                <textarea class="form-control" rows="2" id=""
-                                    placeholder="Address(Start with T)" style="border-radius: 20px;"></textarea>
+                                <textarea class="form-control" rows="2" id="" placeholder="Address(Start with T)"
+                                    style="border-radius: 20px;"></textarea>
                             </div>
 
                             <div class="form-group d-flex align-items-center" style="position: relative;">
                                 <input type="password" class="form-control custom_login_form_pa desk_pass1"
-                                    placeholder="Enter your security password" id="" required style="border-radius: 25px;">
+                                    placeholder="Please enter your security password" id="" required
+                                    style="border-radius: 25px;">
                             </div>
 
-                            <button type="button" class="btn btn-block" style="background:#0c665a;color
+                            <button type="button" class="btn btn-block" style="background-color: rgb(255, 25, 100);
+                            border-color: rgb(255, 25, 100);color
                             :#FFF;">Confirm</button>
 
                         </form>

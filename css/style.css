@@ -786,10 +786,7 @@ input:checked + .slider:before {
     width: 40%;
     margin: 0 418px;
 }
-.recharge_inner_container{
-    display: flex;
-    justify-content: space-between;
-}
+
 .recharge_amount_info{
     position: relative;
     width: 13.96rem;
@@ -808,8 +805,8 @@ input:checked + .slider:before {
     color: #f76997;
 }
 .recharge_para p{
-    font-size: 1.1rem;
-    font-weight: 500!important;
+    font-size: 1rem;
+    font-weight: 400!important;
     line-height: 1.4rem;
     color: #FFF;
     text-align: justify;
@@ -827,7 +824,6 @@ input:checked + .slider:before {
 .withdrawal_form_box{
     margin: auto;
     padding: 0 26px;
-    background-color: #fff;
     border-radius: 24px;
     padding: 1rem 5rem 4rem 4rem;;
 }
@@ -842,10 +838,14 @@ input:checked + .slider:before {
     color: #6c757d;
 }
 .withdrawal_amt p{
-    font-size: 50px;
+    font-size: 30px;
     padding: 1rem 3.500rem;
     text-align: center;
-    background-color: #e9ecef;
+    padding: 32px;
+    font-weight: 700;
+    color: #495057;
+    background-color: hsla(0,0%,100%,.5);
+    border-radius: 19px;
 }
 .withdrawal_form_box input, .withdrawal_form_box select{
     border-radius: 4px;
@@ -986,7 +986,7 @@ background-color: #40afff;
     width: 211.188px;
 }
 .share_text h3{
-    font-size: 25px;
+    font-size: 18px;
     line-height: 21.6px;
     font-weight: 700;
     color: #000;
@@ -995,8 +995,8 @@ background-color: #40afff;
 .share_text p{
     text-align: center;
     font-weight: 700;
-    color: #9696a1;
-    font-size: 1rem;
+    color: #eb4068;
+    font-size: .8rem;
 }
 .share_form_group input{
     color: #fff!important;
@@ -1019,14 +1019,14 @@ background-color: #40afff;
 }
 .qr_text h3{
     text-align: center;
-    color: #FFF;
+    color: #2a2a2a;
     font-size: 30px;
     font-weight: 700;
     line-height: 34.56px;
 }
 .qr_text p{
     text-align: center;
-    color: #7cb6af;
+    color: #2a2a2a;
     font-size: 16.32px;
     font-weight: 400;
     line-height: 16.32px;
@@ -1041,6 +1041,12 @@ background-color: #40afff;
     justify-content: center;
     margin:auto;
 }
+.share_text{
+    background: url(../images/lw-bg.114db291.png);
+    background-size: 100%;
+    width: 100%;
+    height: 6rem;
+}
 /*------------------------------ Share End------------------------- */
 
 .parent_team_container{
@@ -1050,16 +1056,11 @@ background-color: #40afff;
 .team_level_container{
     display: flex;
     justify-content: space-around;
-    background-color: #FFF;
-    width: 94%;
-    margin: auto;
-    border-radius: 25px;
-    padding: 0 1rem;
 }
 .team_level_container button{
     color: #fff;
-    background-color: #0c665a;
-    border-color: #0c665a;
+    background-color: #ff2768;
+    border-color: #ff2768;
     border-radius: 5px;
     padding: .3rem 2rem!important;
 }
